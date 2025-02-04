@@ -26,4 +26,3 @@ cmake --build _cmake_build --target install
 cd ../
 rm -r librdkafka
 
-/opt/carma/scripts/install_dependencies_script.sh
