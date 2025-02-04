@@ -15,13 +15,11 @@ project(kafka-client
 )
 
 
-option(BUILD_PYTHON_BINDINGS 
-    "BUILD PYTHON BINDINGS is used to configure whether or not to including building python module bindings into the cmake build process.
-     **NOTE** Build python bindings is currently only support for native builds (not supported for cross-compile builds) " OFF)
 option(BUILD_TESTS "Build tests" OFF)
 option(CREATE_DEB_PACKAGE "Create Debian Package" OFF)
 
 include(cmake/dependencies.cmake)
+
 add_definitions(-DSPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_TRACE)
 
 add_library(${PROJECT_NAME} SHARED )
