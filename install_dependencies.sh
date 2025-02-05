@@ -25,4 +25,6 @@ cmake --build _cmake_build
 cmake --build _cmake_build --target install
 cd ../
 rm -r librdkafka
+# Update dynamic linker
+ldconfig
 
